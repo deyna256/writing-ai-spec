@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "writing-ai-spec",
+  "description": "AI-first design document writer for Claude Code.",
+  "owner": {
+    "name": "deyna256",
+    "url": "https://github.com/deyna256"
+  },
+  "plugins": [
+    {
+      "name": "writing-ai-spec",
+      "description": "Writes AI-first SPEC.md — structured, traceable specs optimised for LLM implementation. Two-phase: Foundation (architecture + entities) → Derivation (processes + contract). Mandatory validation checklist.",
+      "source": "./",
+      "category": "productivity"
+    }
+  ]
+}

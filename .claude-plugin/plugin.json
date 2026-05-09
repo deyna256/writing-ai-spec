@@ -1,0 +1,8 @@
+{
+  "name": "writing-ai-spec",
+  "description": "AI-first specification writer. Produces SPEC.md optimised for LLM implementation — clean, observable, testable, adaptable.",
+  "author": {
+    "name": "deyna256",
+    "url": "https://github.com/deyna256"
+  }
+}
