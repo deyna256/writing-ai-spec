@@ -39,18 +39,12 @@ Phase 3: Validation
 ## Installation
 
 ```bash
-# Add marketplace
-/marketplace add github:deyna256/writing-ai-spec
-
-# Install plugin
-/install writing-ai-spec@writing-ai-spec
+claude plugin marketplace add deyna256/writing-ai-spec
+claude plugin install writing-ai-spec@writing-ai-spec
 ```
 
 ## Usage
 
-Invoke via:
-```
-/writing-ai-spec
-```
+Claude auto-triggers on: `"напиши спеку"`, `"write spec"`, `"write design doc"`, `"create specification"`, `"дизайн документ"`.
 
-Or Claude auto-triggers on: `"напиши спеку"`, `"write spec"`, `"write design doc"`, `"create specification"`, `"дизайн документ"`.
+Or invoke explicitly via the skill name in conversation.
