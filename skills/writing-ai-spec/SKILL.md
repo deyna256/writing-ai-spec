@@ -180,14 +180,33 @@ File: `SPEC.md` in the project root (or user-specified path).
 **§2 — MD Format + Table of Contents** is a structural requirement, not a content section:
 the spec is always Markdown with a TOC linking all sections. Every spec must satisfy §2.
 
+The TOC must be **three levels deep**: top-level sections → subsections → individual items (entities,
+processes, operations). This lets an implementer jump directly to any entity or process without
+scanning the document.
+
 ```markdown
 # ProjectName — Specification
 
 ## Table of Contents
+
 1. [Overview](#overview)
+   - [Idea & Goal](#idea--goal)
+   - [Scope](#scope)
+   - [Architectural Requirements](#architectural-requirements)
+   - [Architectural Constraints](#architectural-constraints)
+
 2. [Entities & Data Types](#entities--data-types)
+   - [EntityOne](#entityone)
+   - [EntityTwo](#entitytwo)
+   - [Named Constants](#named-constants)
+
 3. [Processes & Functions](#processes--functions)
+   - [ProcessOne](#processone)
+   - [ProcessTwo](#processtwo)
+
 4. [Public Contract](#public-contract)
+   - [OperationOne](#operationone)
+   - [OperationTwo](#operationtwo)
 
 ---
 ## Overview
