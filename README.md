@@ -15,6 +15,7 @@ Every spec follows this standard:
 | Section | Content |
 |---------|---------|
 | §1 Overview | Goal, scope, architectural requirements, constraints, non-goals |
+| §2 Format | MD with table of contents — structural requirement for every spec |
 | §3 Entities & Data Types | Fields with justifications tied to §1 requirements |
 | §4 Processes & Functions | Input / Output / Invariants / Side Effects → Functions |
 | §5 Public Contract | Everything crossing the system boundary |

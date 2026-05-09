@@ -177,12 +177,15 @@ just fix and produce a clean result.
 
 File: `SPEC.md` in the project root (or user-specified path).
 
+**§2 — MD Format + Table of Contents** is a structural requirement, not a content section:
+the spec is always Markdown with a TOC linking all sections. Every spec must satisfy §2.
+
 ```markdown
 # ProjectName — Specification
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Entities & Data Types](#entities--data-types)  
+2. [Entities & Data Types](#entities--data-types)
 3. [Processes & Functions](#processes--functions)
 4. [Public Contract](#public-contract)
 
@@ -197,8 +200,7 @@ File: `SPEC.md` in the project root (or user-specified path).
 ...
 ```
 
-Section numbering in the doc: §1=Overview, §3=Entities, §4=Processes, §5=Contract.
-(§2 is the TOC — implicit in every MD document.)
+Section map: §1=Overview · §2=MD+TOC (format constraint) · §3=Entities · §4=Processes · §5=Contract.
 
 ---
 
