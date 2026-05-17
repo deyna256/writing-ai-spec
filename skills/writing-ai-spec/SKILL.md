@@ -115,7 +115,13 @@ an entity from §3 or be a primitive. New types go back to §3 first.
 **Side Effects:** what changes outside the function (file, queue, external state)
 
 #### Functions
-- `funcName(args) → return` — one-line description
+
+- `funcName(args) → return`
+  - **What:** full description of what the function does — concrete, implementation-level.
+    Cover edge cases, non-obvious behaviour, and any constraints the implementation must respect.
+    Write enough that an LLM can implement the function correctly without guessing.
+  - **Why:** why this function exists in this process and product context — which requirement,
+    invariant, or business rule it serves. Explain consequences of getting it wrong.
 ```
 
 Rules:
@@ -123,6 +129,8 @@ Rules:
 - Every state-changing process has documented Side Effects (observability gate)
 - Every process has at least one invariant (testability gate)
 - No magic numbers — use named constants defined in §1 or §3
+- Every function has **What** + **Why** with enough depth for correct implementation —
+  a brief label is not sufficient; describe behaviour, constraints, and purpose in context
 
 ### §5 — Public Contract
 
@@ -162,7 +170,7 @@ just fix and produce a clean result.
 - [ ] **Cleanliness** — no undefined types in process Input/Output
 - [ ] **Simplicity** — no duplicate processes; all non-goals explicit in §1
 - [ ] **Observability** — every state-changing process has Side Effects documented
-- [ ] **Testability** — every process has Input, Output, and at least one Invariant
+- [ ] **Testability** — every process has Input, Output, and at least one Invariant; every function has What + Why
 - [ ] **Adaptability** — no magic numbers anywhere; all constants named in §1 or §3
 - [ ] **Best practices** — naming consistent, no implicit behaviour, zero ambiguity
 
@@ -234,3 +242,4 @@ Section map: §1=Overview · §2=MD+TOC (format constraint) · §3=Entities · �
 | Missing non-goals | Always add Non-goals to §1 |
 | Side effects undocumented | Any write to file/queue/state = Side Effect |
 | TBD left in final doc | Fix before delivery, never leave open |
+| Function with shallow What/Why | Descriptions must cover behaviour, constraints, and product context — not just a label |
